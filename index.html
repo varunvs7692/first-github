@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link href="C:\MinGW\share\gcc-6.3.0\python\libstdcxx\v6\style.css" rel="stylesheet" />
+    <style>
+        *{
+            margin:0;
+            box-sizing:border-box;
+            font-family:sans-serif;
+        }
+        li {
+            color: red;
+        }
+    #logo {
+        width:100px;
+        height:45px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    #nav-container {
+        display:inline-block;
+    } 
+    li.nav-item {
+        display:inline;
+        margin-right: 10px ;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    #header {
+        position: absolute;
+        top: 0;
+        left:0;
+        z-index:200;
+        width:100%;
+    }
+    #main {
+        width: 100%;
+        height: 100vh;
+        /* position: fixed;
+        top: 10px;
+        left: 50px; */
+        position:relative;
+    }
+    #banner-image {
+        width:100%;
+        height:100vh;
+        position:absolute;
+        top:0;
+        left:0;
+    }
+    #banner-content {
+        z-index: 200;
+        position: absolute;
+        top: 60px;
+        left: 40px;
+        color: white;
+        width:30%;
+    }
+    #banner-heading-image , #banner-heading {
+        margin-bottom: 20px;
+    }
+    #action-button-container{
+        z-index: 200;
+     position: absolute;
+     color: white;
+     top: 350px;
+     left: 40px;
+     margin-block-end: 10px;
+    }
+    #content-row {
+        z-index: 200;
+        position: absolute;
+        color: white;
+        top: 480px;
+        left:40px;
+        
+    }
+    #content {
+        z-index: 200;
+        position:absolute;
+        display: inline;
+        overflow-x:scroll;
+        width: 100%;
+        display:inline-block;
+        white-space: nowrap;
+     }
+    #content {
+        display: inline-block;
+        margin-right: 10px;
+        cursor:pointer ;
+     }
+
+    #content img {
+        height: 130px;
+        width: 220px;
+     }
+   
+    </style>
+    
+</head>
+<body>
+    <div id="header">
+    <img id="logo" src="https://img.icons8.com/?size=100&id=20519&format=png&color=000000"/>
+    <div id="nav-container">
+    <ul>
+    <li class="nav-item">Home</li>
+    <li class="nav-item">Tv shows</li>
+    <li class="nav-item">Movies</li>
+    <li class="nav-item">News & popular</li>
+    <li class="nav-item">My List</li>
+    <li class="nav-item">Browser by langauage</li>
+    </ul>
+    </div>
+    </div>
+    <div id="header-section">
+        <img src="C:\Users\DELL\Downloads\search.svg" style="height: 20px;">
+        <img src="C:\Users\DELL\Downloads\bell.svg" style="height: 20px;">
+        <img src="C:\Users\DELL\Downloads\user.png" style="height:20px ;">
+        <img src="C:\Users\DELL\Downloads\chevron-down.svg" style="height: 20px;">
+    </div>
+    <div id ="main">
+     <img id ="banner-image" src="C:\Users\DELL\OneDrive\Pictures\Screenshots\Screenshot 2024-08-31 122019.png"/>
+     <div id="banner-content">
+         <img id="banner-heading-image" src="https://th.bing.com/th/id/OIP.K0eyMGQCdYGIWX4v3bZX9wHaDa?rs=1&pid=ImgDetMain" />
+        <h1 id="banner-heading">Watch All of Season 4 Now</h1>
+        <p>Nick and Vanessa Lachey host this social experiment where single men and women look for love and get engaged, all before meeting in person. </p>
+    </div>
+
+    </div>
+    <div id="action-button-container" style="margin-top: 100px ;">
+    <button style="background-color: rgba(109,109,110,0.7);">Play</botton>
+    <button style="background-color: rgba(109,109,110,0.7);">More Info</button>
+    </div>
+        <div id="content-row">
+        <h2>You Might Like</h2>
+    </div>
+    <div id="content">
+        <img src="https://th.bing.com/th/id/OIP.JSS9W954Z485L3sLo9C90wHaEK?w=307&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" style="height: 100px;"/>
+        <img src="https://th.bing.com/th?q=Netflix+Movies+Poster+for+Kids&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" style="height: 100px;" />
+        <img src="https://th.bing.com/th/id/OIP.psYgD_OEXzO6jZmQQjDc1AAAAA?w=320&h=174&c=7&r=0&o=5&dpr=1.3&pid=1.7" style="height: 100px;" />
+        <img src="https://th.bing.com/th?q=Best+Filipino+Movies+On+Netflix&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247"style="height: 100px;"/>
+        <img src="https://th.bing.com/th?q=Good+Family+Movies+On+Netflix&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" style="height: 100px;"/>
+        <img src="https://th.bing.com/th?q=Top+Ten+Netflix+Movies&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" style="height: 100px;"/>
+        <img src="https://th.bing.com/th?q=Netflix+Movies+About+Trends&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247"style="height: 100px;" />
+        <img src="https://th.bing.com/th?q=Netflix+Movies+About+Trends&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" style="height: 100px;"/>
+        <img src="https://th.bing.com/th/id/OIP.JSS9W954Z485L3sLo9C90wHaEK?w=307&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" style="height: 100px;"/>
+        <img src="https://th.bing.com/th?q=Netflix+Movies+Poster+for+Kids&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" style="height: 100px;" />
+        <img src="https://th.bing.com/th/id/OIP.psYgD_OEXzO6jZmQQjDc1AAAAA?w=320&h=174&c=7&r=0&o=5&dpr=1.3&pid=1.7" style="height: 100px;" />
+        <img src="https://th.bing.com/th?q=Best+Filipino+Movies+On+Netflix&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247"style="height: 100px;"/>
+
+    </div>
+    <script src="https://unpkg.com/feather-icons"></script>
+</body>
+</html>
